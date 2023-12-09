@@ -27,18 +27,16 @@ const copyPassword = async () => {
   try {
     if (pass) {
       await navigator.clipboard.writeText(pass);
-
       Swal.fire({
         title: "Copied!",
-        icon: "success"
+        icon: "success",
       });
-
     } else {
       Swal.fire({
-  title: "Password empty!",
-  text: "Press on the Generate Password button",
-  icon: "warning"
-});
+        title: "Password empty!",
+        text: "Press on the Generate Password button",
+        icon: "warning",
+      });
     }
   } catch (error) {
     console.log(error.message);
