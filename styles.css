@@ -78,6 +78,10 @@ body {
     font-size: 35px;
   }
 
+  .display {
+    justify-content: space-around;
+  }
+
   .display input {
     font-size: 18px;
   }
